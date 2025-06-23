@@ -1,0 +1,37 @@
+# Python cache ve ortam dosyaları
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Sanal ortamlar
+venv*/
+mask_detection_env310/
+
+# Model ağırlıkları ve büyük dosyalar
+*.pt
+*.pth
+*.h5
+*.ckpt
+*.onnx
+
+# Eğitim çıktıları
+mask_detection/*/weights/
+mask_detection/*/events.*
+mask_detection/*/*.jpg
+mask_detection/*/*.png
+mask_detection/*/*.csv
+mask_detection/*/*.yaml
+
+# Datasetler
+maske-dataset/
+dataset/
+
+# Jupyter notebook checkpointleri
+.ipynb_checkpoints/
+
+# IDE dosyaları
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db 

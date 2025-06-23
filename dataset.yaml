@@ -1,0 +1,13 @@
+# Maske Tespit Dataset Konfigürasyonu
+path: C:/Users/Makif/Desktop/bgoru/dataset  # dataset root directory (tam yol)
+train: images/train  # train images (relative to 'path')
+val: images/val  # val images (relative to 'path')
+
+# Classes
+names:
+  0: with_mask
+  1: without_mask
+  2: mask_weared_incorrect
+
+# Class count
+nc: 3 
