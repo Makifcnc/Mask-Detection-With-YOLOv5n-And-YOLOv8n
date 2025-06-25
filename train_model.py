@@ -4,16 +4,16 @@ import os
 def train_mask_detection_model():
     """Maske tespit modelini eğitir"""
     
-    # YOLO modelini yükle (küçük model - hızlı eğitim için)
+    # YOLO modelini yükle (küçük model - hızlı eğitim icin)
     model = YOLO('yolov8n.pt')
     
-    # Model eğitimi
+  
     print("Model eğitimi başlıyor...")
     results = model.train(
         data='dataset.yaml',
-        epochs=50,  # Epoch sayısı
-        imgsz=640,  # Resim boyutu
-        batch=16,   # Batch size
+        epochs=50,  
+        imgsz=640,  
+        batch=16,   
         device='cpu',  # CPU kullan (GPU varsa '0' yapabilirsiniz)
         patience=10,   # Early stopping
         save=True,
